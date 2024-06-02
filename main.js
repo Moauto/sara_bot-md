@@ -108,7 +108,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `Harlry-light`;
+global.authFile = `𝑬𝒓𝒆𝒏 𝒀𝒆𝒂𝒈𝒆𝒓`;
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile);
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -279,7 +279,7 @@ console.log(chalk.bold.red(`[ ℹ️ ] Algo salio mal durante la eliminación, a
 }}
 
 function purgeOldFiles() {
-const directories = ['./Harlry-light/', './jadibts/']
+const directories = ['./𝑬𝒓𝒆𝒏 𝒀𝒆𝒂𝒈𝒆𝒓/', './jadibts/']
 const oneHourAgo = Date.now() - (60 * 60 * 1000)
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
@@ -544,7 +544,7 @@ setInterval(async () => {
   if (stopped === 'close' || !conn || !conn.user) return;
   const _uptime = process.uptime() * 1000;
   const uptime = clockString(_uptime);
-  const bio = `تم تطوير البوت بواستطي هارلي لايت 👑🔥 :\n\n ${uptime}`;
+  const bio = `تم تطوير البوت بواستطي ايرين ييغر 👑🔥 :\n\n ${uptime}`;
   await conn.updateProfileStatus(bio).catch((_) => _);
 }, 60000);
 function clockString(ms) {
